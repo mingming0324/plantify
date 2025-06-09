@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>plantify-main</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+  <!-- 로딩 페이지 -->
+  <div class="loading-container">
+    <div class="dukgu-wrapper">
+      <img src="./images/loading/duck_body.png" class="body" alt="body" />
+      <img src="./images/loading/duck_eyebrow.png" class="eyebrow" alt="eyebrow" />
+    </div>
+
+    <div class="loading-text">로딩중...</div>
+  </div>
+  <!-- 로딩페이지 끝 -->
+
+  <!-- 상단바 -->
+  <header class="top-bar">
+    <div class="hd-con">
+      <div class="hd-inner">
+        <div class="logo_box">
+          <a href="./index.html"><img class="logo" src="./images/top-bar/hd-logo.png" alt="hd-logo" /></a>
+          <a href="./index.html"><img class="logo_sidemenu" src="./images/top-bar/hd-logo_sidemenu.png"
+              alt="hd-logo_sidemenu" /></a>
+        </div>
+        <div class="hd-sidemenu_box">
+          <span class="sidemenu_btn"></span>
+          <span class="sidemenu_btn"></span>
+          <span class="sidemenu_btn"></span>
+        </div>
+      </div>
+
+      <div class="sidemenu">
+        <div class="all-wrap_sidemenu">
+          <div class="text-box_sidemenu">
+            <ul>
+              <li>
+                <a href="./brand-page/">BRAND</a>
+                <div>
+                  <ul class="submenu">
+                    <li><a href="">UI</a></li>
+                    <li><a href="">BI</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">SHOP</a></li>
+              <li><a href="#">EVENT</a></li>
+              <li><a href="#">RECIPE</a></li>
+              <li><a href="#">APP</a></li>
+            </ul>
+          </div>
+          <div class="mypage">
+            <ul class="stop-hover">
+              <li><a href="#">LOGIN</a></li>
+              <li><a href="#">MYPAGE</a></li>
+              <li><a href="#">CART</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="right-box">
+    <div class="right-top">
+      <span class="right-top__span">∧</span>
+      <span class="right-top__span">TOP</span>
+    </div>
+    <div class="right-app">
+      <span class="right-app__span"><a href="#">APP</a></span>
+    </div>
+  </div>
+  <!-- 상단바 끝 -->
+
+  <!-- 메인 시작 -->
+  <main>
+    <section class="main_sec" id="mainSection">
+      <div class="main-full-wrap">
+        <h1 class="animate__shakeYBig">
+          <img class="title-img" src="./images/main/main_Easy-Peasy-VEgie.png" alt="슬로건 내용" />
+        </h1>
+      </div>
+
+      <div class="center-content">
+        <div class="img-wrap" style="position: absolute; top: 0; left: 50%; transform: translateX(-50%);">
+          <img class="main-img animate__animated animate__bounceInUp" src="./images/main/main-full.png"
+            alt="main-full" />
+        </div>
+
+        <div class="start-wrapper animate__animated animate__bounceInUp">
+          <a href="./brand-page/index.html">
+            <img src="./images/main/main_start-box.png" alt="START 버튼" class="start animate__rollIn" />
+          </a>
+        </div>
+      </div>
+
+    </section>
+    <img class="chack" src="./images/main/main-chack.png" alt="하단체크이미지" />
+  </main>
+  <!-- 메인 끝 -->
+
+  <!-- 어플 시작 -->
+  <section class="app_sec">
+    <div class="container">
+
+      <!-- 설명 부분을 article로 묶음 -->
+      <article class="app_title_box">
+        <div class="app_title animate__animated scroll-animate">
+          <h2>덕<span>구</span>와 함께 하자<span>구</span>~</h2>
+        </div>
+
+        <p class="app_text">
+          채식 레시피부터 챌린지까지 한 곳에!
+          <br />
+          초보도 금방 익숙해지는 쉬운 인터페이스.
+          <br />
+          나만의 속도대로, 부담없는 채식 플랜티파이 앱에서 만나보세요.
+        </p>
+        <div class="app_btn">
+          <button class="store_btn">
+            <img class="icon_app icon_app-google" src="./images/app/main_app_google-play.png" alt="구글 플레이 아이콘" />Google play</button>
+          <button class="store_btn">
+            <img class="icon_app icon_app-black" src="./images/app/icons8-apple-24.png" alt="앱 스토어 아이콘" />
+            <img class="icon_app icon_app-apple" src="./images/app/main_app-store.png" alt="앱 스토어 아이콘" />App store
+          </button>
+        </div>
+      </article>
+      <!-- QR 코드도 같은 줄 -->
+      <div class="qr_box animate__animated scroll-animate">
+        <img src="./images/app/app_duk.png" alt="큐알코드" />
+        <div class="d-eyebrow">
+          <img src="./images/app/app_duk2.png" alt="덕구 눈썹" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- 어플 끝 -->
+
+  <!-- 레시피 시작 -->
+  <div class="recipe-section">
+    <div class="all-wrap_recipe">
+      <img class="chck-box" src="./images/recipe/chck-box.png" alt="chck-box" />
+      <img class="pattern-box" src="./images/recipe/pattern-box.png" alt="pattern-box" />
+
+
+      <div class="all-box__recipe">
+        <div class="text-icon-box">
+          <div class="icon_star">
+            <img src="./images/recipe/icon_star.png" alt="icon_star" />
+          </div>
+          <div class="text-wrap">
+            <div class="text-box">
+              <span class="text">플랜티파이가 추천하는 이달의 레시피</span>
+              <div class="title-box">
+                <span class="title title-1">Go-Green</span>
+                <span class="title title-2">레시피</span>
+              </div>
+            </div>
+            <div class="icon_cutlery">
+              <img src="./images/recipe/icon_cutlery.png" alt="icon_cutlery" />
+            </div>
+          </div>
+        </div>
+        <div class="item-wrap">
+          <ul>
+            <li class="recipe-item">
+              <span class="recipe-title">두부 깻잎전</span>
+              <a href="#"><img class="img-item" src="./images/recipe/recipe-img-1.png" alt="두부 깻잎전" /></a>
+
+              <div class="hover-box">
+                <div class="hover-img_box">
+                  <img src="./images/recipe/recipe-img-1.png" alt="recipe-img-1" />
+                </div>
+
+                <div class="text-box">
+                  <span class="recipe-box">레시피</span>
+                  <h2>향긋한 두부 깻잎전</h2>
+                  <p>고소한 두부와 향긋한 깻잎의 조화</p>
+                </div>
+                <div class="time-box">
+                  <div class="time">준비시간 10분</div>
+                  <div class="time">조리시간 20분</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="recipe-item">
+              <span class="recipe-title">버섯 크림 덮밥</span>
+              <a href="#"><img class="img-item" src="./images/recipe/recipe-img-2.png" alt="버섯 크림 덮밥" /></a>
+
+              <div class="hover-box">
+                <div class="hover-img_box">
+                  <img src="./images/recipe/recipe-img-2.png" alt="recipe-img-2" />
+                </div>
+
+                <div class="text-box">
+                  <span class="recipe-box">레시피</span>
+                  <h2>고소한 버섯 크림 덮밥</h2>
+                  <p>여러 가지 버섯을 부드러운 크림으로 감싼 따뜻한 덮밥</p>
+                </div>
+                <div class="time-box">
+                  <div class="time">준비시간 30분</div>
+                  <div class="time">조리시간 40분</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="recipe-item recipe-item_stop">
+              <span class="recipe-title">당근라페 샌드위치</span>
+              <a href="#"><img class="img-item" src="./images/recipe/recipe-img-3.png" alt="당근라페 샌드위치" /></a>
+
+              <div class="hover-box">
+                <div class="hover-img_box">
+                  <img src="./images/recipe/recipe-img-3.png" alt="recipe-img-3" />
+                </div>
+
+                <div class="text-box">
+                  <span class="recipe-box">레시피</span>
+                  <h2>상큼한 당근 라페 샌드위치</h2>
+                  <p>아삭한 당근 라페와 신선한 채소가 어우러진 산뜻한 한 입</p>
+                </div>
+                <div class="time-box">
+                  <div class="time">준비시간 10분</div>
+                  <div class="time">조리시간 15분</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="recipe-item">
+              <span class="recipe-title">루꼴라 샌드위치</span>
+              <a href="#"><img class="img-item" src="./images/recipe/recipe-img-4.png" alt="루꼴라 샌드위치" /></a>
+
+              <div class="hover-box">
+                <div class="hover-img_box">
+                  <img src="./images/recipe/recipe-img-4.png" alt="recipe-img-4" />
+                </div>
+
+                <div class="text-box">
+                  <span class="recipe-box">레시피</span>
+                  <h2>신선한 루꼴라 샌드위치</h2>
+                  <p>상큼한 루꼴라와 재료들의 산뜻한 조화</p>
+                </div>
+                <div class="time-box">
+                  <div class="time">준비시간 30분</div>
+                  <div class="time">조리시간 40분</div>
+                </div>
+              </div>
+            </li>
+
+            <li class="recipe-item">
+              <span class="recipe-title">봄동 겉절이 비빔밥</span>
+              <a href="#"><img class="img-item" src="./images/recipe/recipe-img-5.png" alt="봄동 겉절이 비빔밥" /></a>
+
+              <div class="hover-box">
+                <div class="hover-img_box">
+                  <img src="./images/recipe/recipe-img-5.png" alt="봄동 겉절이 비빔밥" />
+                </div>
+
+                <div class="text-box">
+                  <span class="recipe-box">레시피</span>
+                  <h2>새콤한 봄동 겉절이 비빔밥</h2>
+                  <p>제철 봄동의 아삭함을 가득 담은 비빔밥</p>
+                </div>
+                <div class="time-box">
+                  <div class="time">준비시간 30분</div>
+                  <div class="time">조리시간 50분</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="btn-box__recipe">
+            <img src="./images/recipe/btn.png" alt="btn" />
+            <span class="btn"><a href="#">더 알아보기 &nbsp;&nbsp;&nbsp;&nbsp;></a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 레시피 끝 -->
+
+  <!-- 구독 시작 -->
+  <div class="subscribe-section__2">
+    <div class="all-wrap_subscribe">
+      <div class="text-btn-wrap">
+        <div class="text-box">
+          <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
+            data-aos-delay="300">덕구와 함께</h2>
+          <h2 class="text-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000"
+            data-aos-delay="300">
+            " 채식도<span class="highlight-2"> 구독</span>으로 간편하게 "
+          </h2>
+          <p data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="400">
+            한 번의 구독으로 편안하게 즐길 수 있는 채식.<br />
+            정성껏 준비한 식사가 매달 당신의 식탁을 찾아갑니다.
+          </p>
+        </div>
+
+        <!-- 지금 신청하기 버튼 -->
+        <div class="btn-wrap">
+          <div class="event-btn-box" data-aos="zoom-out" data-aos-anchor-placement="center-bottom"
+            data-aos-duration="1000" data-aos-delay="600">
+            <a href="#" class="event-btn">지금 신청하기</a>
+          </div>
+        </div>
+      </div>
+      <!-- 핸드폰 이미지 -->
+      <!-- <div class="subscribe-img-wrap">
+        <img src="/img_subs/img-wrap.png" alt="구독 서비스 이미지">
+      </div> -->
+      <!-- AOS CSS -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+      <!-- 구독 이미지 섹션 -->
+      <div class="subscribe-img-wrap" data-aos="fade-up" data-aos-duration="1000"
+        data-aos-anchor-placement="top-center 10%" data-aos-delay="700">
+        <img src="./images/subscribe/img-wrap.png" alt="구독 서비스 이미지" />
+      </div>
+
+      <!-- AOS JS -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+    </div>
+  </div>
+  <!-- 구독 끝 -->
+
+  <!-- 굿즈 시작 -->
+  <div class="goods-section">
+    <div class="all-wrap_goods">
+      <img class="checkbox" src="./images/goods/chck-box.png" alt="chck-box" />
+      <!-- 텍스트 박스 -->
+      <div class="inner-txt-box">
+        <div class="deco-box">
+          <img src="./images/goods/deco-box.png" alt="deco-box" />
+        </div>
+
+        <div class="title-group">
+          <div class="title-wrapper">
+            <img src="./images/goods/Union.png" alt="Union" />
+            <div class="goods-title">
+              <p>PlantiFy</p>
+              <span>굿즈</span>
+            </div>
+          </div>
+
+          <div class="txt-sub">
+            <div class="deco-box-2">
+              <img src="./images/goods/deco-box-2.png" alt="deco-box-2" />
+            </div>
+
+            <div class="text-2">
+              <p>한 끼가 귀여워지는 식기 세트</p>
+            </div>
+
+            <div class="deco-box-2">
+              <img src="./images/goods/deco-box-2.png" alt="deco-box-2" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 슬라이더 -->
+      <div class="swiper-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/goods/goods-package.jpg" alt="package" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/goods/goods-plate.jpg" alt="plate" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/goods/goods-couster.jpg" alt="couster" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/goods/goods-cup.jpg" alt="cup" />
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <button class="custom-button prev-button">&lt;</button>
+        <button class="custom-button next-button">&gt;</button>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </div>
+  </div>
+  <!-- 굿즈 끝 -->
+
+  <!-- 이밴트 시작 -->
+  <div class="event-banner">
+    <div class="event-content">
+      <!-- #한끼챌린지 + 큰따옴표 + 덕구얼굴(눈썹제외) + 포크 + 샐러드-->
+      <div class="event-title">
+        <img src="./images/event/title.png" alt="title">
+        <div class="duckgu-eyebrow">
+          <img src="./images/event/duckgu-eyebrow.png" alt="eyebrow">
+        </div>
+        <div class="plant-box">
+          <img class="left-plant" src="./images/event/left-plant.png" alt="left-plant">
+          <img class="right-plant" src="./images/event/right-plant.png" alt="right-plant">
+        </div>
+        <!-- 덕구랑 채식하고 굿즈 받아가자 -->
+        <div class="event-subtitle">
+          덕구랑 <span class="highlight">채식</span>하고 굿즈 받아가자!
+        </div>
+        <!-- 지금 참여하기 버튼 -->
+        <div class="event-button">
+          <button type="button">지금 참여하기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 이벤트 끝 -->
+
+  <!-- 푸터 시작 -->
+  <footer>
+    <div class="ft-text-wrap">
+      <div class="footer-logo-box">
+        <a href="./index.html"><img src="./images/footer/ft-logo.png" alt="ft-logo" /></a>
+      </div>
+      <nav class="ft-customer-service">
+        <ul>
+          <li><a href="#">이용약관</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">이메일무단수집거부</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+      </nav>
+      <div class="ft-text">
+        <span>플랜티파이</span>
+        <br />
+        <span>서울특별시 00구 00로 000 (00로 0가, 00타워 5F) 플랜티파이<br />
+          Copyright &copy; 2025 PlantiFy. All rights Reserved.<br />
+          TEL. 02-000-5555 | FAX. 02-000-5353 | E-mail. duckgu@plantify.co.kr
+          | 개인정보보호책임자 : 김덕구
+        </span>
+      </div>
+      <div class="sns-box">
+        <div class="kakaotalk">
+          <a href="#"><img src="./images/footer/kakaotalk.png" alt="카카오톡" /></a>
+        </div>
+        <div class="instagram">
+          <a href="#"><img src="./images/footer/instagram.png" alt="인스타그램" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- 푸터 끝 -->
+</body>
+
+</html>
