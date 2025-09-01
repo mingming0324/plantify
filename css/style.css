@@ -1122,8 +1122,6 @@ main {
     padding: 0.75em 2em;
     text-align: center;
     text-decoration: none;
-    color: $color;
-    border: 2px solid $color;
     display: inline-block;
     transition: all 0.2s ease-in-out;
     position: relative;
@@ -1141,9 +1139,9 @@ main {
     transition: none;
   }
   &:hover {
-    background-color: $color;
+    background-color: color;
     color: #fff;
-    border-bottom: 4px solid darken($color, 10%);
+    border-bottom: 4px solid darken(color, 10%);
     &:before {
       transform: skewX(-45deg) translateX(13.5em);
       transition: all 0.5s ease-in-out;
