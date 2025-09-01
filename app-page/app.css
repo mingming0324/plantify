@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Fanky Bubble Graffiti';
+  src: url('../fonts/FankyBubble Graffiti.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SBAggroB';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Pretendard-bold';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 노말라이즈 */
+body,
+ul,
+li, h2, p, h1, span {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+}
+
+html>body {
+  overflow-x: hidden;
+  font-family: 'Pretendard-Regular';
+}
+
+/* 노말라이즈 끝 */
+
+/* <!-- 메인시작 --> */
+.app_main {
+  height: 1036px;
+  background-color: #fff9e7;
+}
+/* <!-- 메인끝 --> */
+
+/* <!-- sec-2 시작 --> */
+
+/* <!-- sec-2 끝 --> */
+
+/* <!-- sec-3 시작 --> */
+
+/* <!-- sec-3 끝 --> */
+
+/* <!-- sec-4 시작 --> */
+
+/* <!-- sec-4 끝 --> */
+
+/* <!-- event 시작 --> */
+
+/* <!-- event 끝 --> */
