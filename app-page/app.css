@@ -272,6 +272,7 @@ html>body {
 /* <!-- event 시작 --> */
 .app_event {
   padding: 110px 290px;
+  box-sizing: border-box;
 }
 
 .event_silde-box {
@@ -292,6 +293,7 @@ footer > .ft-text-wrap {
   width: 100%;
   margin: 0 auto;
   padding: 65px 255px;
+  box-sizing: border-box;
 } 
 
 /* footer-logo-box  */
