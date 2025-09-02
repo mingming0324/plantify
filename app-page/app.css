@@ -69,7 +69,6 @@ a {
 }
 
 html>body {
-  overflow-x: hidden;
   font-family: 'Pretendard-Regular';
 }
 
@@ -89,6 +88,10 @@ html>body {
 .img-box>img {
   width: 100%;
   display: block;
+}
+
+.flex-d  {
+  flex-direction: column;
 }
 
 /* 컬러칩 */
@@ -197,17 +200,149 @@ html>body {
 /* <!-- 메인끝 --> */
 
 /* <!-- sec-2 시작 --> */
+.app_sec-2 {
+  background-image: url(./app-imgs/sec-2_back-img.png);
+  background-size: cover;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.app_wrap {
+  box-sizing: border-box;
+  justify-content: center;
+  overflow: hidden;
 
+}
+.sec-2_wrap  {
+  padding: 170px 0 0;
+  gap: 140px;
+}
+.app_text-wrap {
+  gap: 46px;
+  white-space: nowrap;
+  height: 330px;
+  margin-top: 280px;
+  text-align: right;
+}
+
+.app_text-wrap .app_text-box {
+  gap: 22px;
+}
+
+.app_text-wrap .app_text-box .app_title h1 {
+  font-family:  'Aggravo';
+  font-size: 45px;
+  font-weight: 700;
+  color: var(--color-point-title);
+  letter-spacing: -1px;
+  text-align: left;
+}
+
+.app_text-wrap .app_text-box .app_text {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 44.8px;
+  letter-spacing: -.5;
+  color: var(--color-btn2);
+  text-align: left;
+}
+
+.sec-2_img-box {
+  height: 868px;
+}
 /* <!-- sec-2 끝 --> */
 
 /* <!-- sec-3 시작 --> */
+.sec-3_wrap {
+  padding: 150px 0 0;
+  gap: 212px;
+}
 
+.sec-3_text-wrap {
+  text-align: left;
+}
 /* <!-- sec-3 끝 --> */
 
 /* <!-- sec-4 시작 --> */
-
+.sec-4_wrap {
+  padding-top: 220px;
+  gap: 300px;
+}
 /* <!-- sec-4 끝 --> */
 
 /* <!-- event 시작 --> */
+.app_event {
+  padding: 110px 290px;
+}
 
+.event_silde-box {
+  width: 1339px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
 /* <!-- event 끝 --> */
+
+/* 푸터 시작 */
+footer {
+  background-color: #046746;
+}
+
+footer > .ft-text-wrap {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 65px 255px;
+} 
+
+/* footer-logo-box  */
+
+footer > .ft-text-wrap > .footer-logo-box > img {
+width: 175.08px;
+height: 51.18px;
+
+}
+
+/* 이용약관, 개인정보처리방침 ~ */
+footer > .ft-text-wrap > .ft-customer-service > ul {
+  padding-top: 35px;
+  display:flex;
+  justify-content: left;
+  gap: 25px;
+  padding-bottom: 30px;
+}
+footer > .ft-text-wrap > .ft-customer-service > ul > li {
+  color: #FFF9E7;
+  white-space: nowrap;
+}
+
+footer > .ft-text-wrap > .ft-customer-service > ul > li > a {
+  font-size: 20px;
+}
+
+/* ft-text */
+footer > .ft-text-wrap > .ft-text {
+  color: #FFF9E7;
+  font-size: 16px;
+  white-space: nowrap;
+}
+footer > .ft-text-wrap > .ft-text > address, span {
+  line-height: 30px;
+  
+} 
+/* sns-box */
+footer .sns-box {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  bottom: 210px;
+}
+
+footer .sns-box > .kakaotalk {
+  width: 36px;
+  height: 36px;
+  margin-right: 20px;
+}
+footer .sns-box > .instagram {
+  width: 35px;
+  height: 35px;
+}
