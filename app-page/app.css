@@ -629,12 +629,15 @@ html>body {
   padding: 110px 290px;
   box-sizing: border-box;
 }
-
-.event_silde-box {
-  width: 1339px;
+.mySwiper {
+  width: 100%;
+  max-width: 1339px;
+  margin: 0 auto;
   overflow: hidden;
-  justify-content: center;
-  align-items: center;
+  height: auto; /* v11의 height:100% 덮어서 내용 높이에 맞추기 */
+}
+.swiper-slide img {
+  height: auto;
 }
 /* <!-- event 끝 --> */
 

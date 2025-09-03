@@ -96,6 +96,13 @@ tl_3.to(".create_4", {
   duration: 2,
 });
 
+//이벤트
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true
+});
+
 // 푸터
 $(window).on('scroll', function () {
   const box = $('.right-box');     // 따라다니는 박스
