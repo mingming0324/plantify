@@ -139,14 +139,20 @@ body::-webkit-scrollbar-track {
 }
 
 /* 상단바 시작 */
-.top-bar {
-  position: relative;
+.hide-header {
+  transform: translateY(-100%);
+  opacity: 1;
+}
+
+.top-bar {  
+  position: fixed;
+  z-index: 100;
   height: 110px;
+  transition: transform .4s ease-in-out, opacity .4s ease-in-out;
 }
 
 .top-bar>.hd-con.show_sidemenu {
   background-color: #fff;
-  
 }
 
 .top-bar>.hd-con {
@@ -155,6 +161,7 @@ body::-webkit-scrollbar-track {
   top: 0;
   z-index: 2;
   background-color: #FFF9E7;
+  /* opacity: .7; */
     transition: all .5s;
 }
 
@@ -373,7 +380,7 @@ body::-webkit-scrollbar-track {
   height: 170px;
   display: flex;
   flex-direction: column;
-  top: 76%;
+  top: 700px;
   left: auto;
   right: 70px;
   z-index: 1;
@@ -427,11 +434,11 @@ body::-webkit-scrollbar-track {
 main {
   background-color: #FFF9E7;
   position: relative;
-  height: 1070px;
+  height: 1090px;
 }
 
 .main_sec {
-  padding: 0 255px;
+  padding: 20px 255px 0;
   max-width: 1920px;
   width: 100%;
   margin: 0 auto;
