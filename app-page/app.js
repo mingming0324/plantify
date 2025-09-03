@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 // 상단바 시작
 $(".hd-sidemenu_box").click(function () {
   $(".logo_sidemenu").toggleClass("show_sidemenu");
@@ -32,10 +34,67 @@ $(function () {
     $('.main_dukgu-img').addClass('is-in');
     $('.main_dukgu-efect').addClass('is-in'); 
   }, 1000);
-
-
 });
 
+//sec-2 
+let tl_1 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".app_sec-2",       
+    start: "top 50%",      
+    toggleActions: "play none none none" ,     
+    // markers: true 
+  },
+  
+  defaults: {
+    ease: "power4.out" 
+  }
+});
+
+tl_1.to(".create_2", {
+  y: 0,
+  opacity: 1,
+  duration: 1.5,
+});
+
+//sec-3 
+let tl_2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".sec-3_wrap",       
+    start: "top 40%",      
+    toggleActions: "play none none none" ,     
+    // markers: true 
+  },
+  
+  defaults: {
+    ease: "power4.out" 
+  }
+});
+
+tl_1.to(".create_3", {
+  x: 0,
+  opacity: 1,
+  duration: 2,
+});
+
+//sec-4 
+let tl_3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".sec-4_wrap",       
+    start: "top 40%",      
+    toggleActions: "play none none none" ,     
+    // markers: true 
+  },
+  
+  defaults: {
+    ease: "power4.out" 
+  }
+});
+
+tl_3.to(".create_4", {
+  y: 0,
+  opacity: 1,
+  duration: 2,
+});
 
 // 푸터
 $(window).on('scroll', function () {

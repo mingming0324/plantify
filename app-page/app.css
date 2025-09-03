@@ -103,6 +103,21 @@ html>body {
   transform: translateY(0);
   opacity: 1;
 }
+
+.create_2 {
+  transform: translateY(50%);
+  opacity: 0;
+}
+
+.create_3 {
+  transform: translatex(-100%);
+  opacity: 0;
+}
+
+.create_4 {
+  transform: translateY(50%);
+  opacity: 0;
+}
 /* 컬러칩 */
 :root {
   --color-main : #E63E0F;
@@ -570,6 +585,25 @@ html>body {
 .sec-2_img-box {
   height: 868px;
 }
+
+/* .app_btn-box {
+  animation: pulse 2s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+  from { transform: scale(0.8); }
+  to { transform: scale(1.5); }
+} */
+
+.app_btn-box {
+  animation: bounce2 2s ease infinite;
+}
+@keyframes bounce2 {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-10px);}
+	60% {transform: translateY(-5px);}
+}
+
 /* <!-- sec-2 끝 --> */
 
 /* <!-- sec-3 시작 --> */
