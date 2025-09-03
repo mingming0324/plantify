@@ -78,6 +78,20 @@ tl_1.to(".create_2", {
   duration: 1.5,
 });
 
+tl_1.to(".create_7", {
+  opacity: 1,
+  duration: 1.5,
+}, "-=1");
+
+tl_1.to(".create_5", {
+  x: 0,
+  y: 0,
+  opacity: 1,
+  duration: 1.5,
+  clipPath: "inset(0% 0% 0% 0%)",
+}, "-=1.3");
+
+
 //sec-3 
 let tl_2 = gsap.timeline({
   scrollTrigger: {
@@ -92,11 +106,16 @@ let tl_2 = gsap.timeline({
   }
 });
 
-tl_1.to(".create_3", {
+tl_2.to(".create_3", {
   x: 0,
   opacity: 1,
   duration: 2,
 });
+
+tl_2.to(".create_6", {
+  opacity: 1,
+  duration: 1.5,
+}, "-=1.5");
 
 //sec-4 
 let tl_3 = gsap.timeline({
@@ -117,6 +136,11 @@ tl_3.to(".create_4", {
   opacity: 1,
   duration: 2,
 });
+
+tl_3.to(".create_8", {
+  opacity: 1,
+  duration: 1.5,
+}, "-=1.5");
 
 //이벤트
 var swiper = new Swiper(".mySwiper", {

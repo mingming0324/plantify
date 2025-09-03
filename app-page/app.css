@@ -118,6 +118,16 @@ html>body {
   transform: translateY(50%);
   opacity: 0;
 }
+
+.create_5 {
+  transform: translate3d(100%, 100%, 0); /* 좌상단 바깥 */
+  opacity: 0;
+  will-change: clip-path;
+}
+
+.create_6, .create_7, .create_8 {
+  opacity: 0;
+}
 /* 컬러칩 */
 :root {
   --color-main : #E63E0F;
@@ -567,6 +577,7 @@ body::-webkit-scrollbar-track {
   background-size: cover;
   overflow: hidden;
   box-sizing: border-box;
+  position: relative;
 }
 .app_wrap {
   box-sizing: border-box;
@@ -608,10 +619,23 @@ body::-webkit-scrollbar-track {
   text-align: left;
 }
 
+.sec_img-wrap {
+  position: relative;
+}
+
 .sec-2_img-box {
   height: 868px;
 }
 
+.phone-img-box {
+  top: 0;
+  right: -160px;
+}
+
+.carrat-box {
+  top: -130px;
+  right: 330px;
+}
 /* .app_btn-box {
   animation: pulse 2s infinite ease-in-out alternate;
 }
@@ -630,6 +654,20 @@ body::-webkit-scrollbar-track {
 	60% {transform: translateY(-5px);}
 }
 
+.back-img {
+  position: absolute;
+}
+
+/* 토마토 */
+.back-img_tomato {
+  top: 650px;
+  left: -220px;
+}
+
+.back-img_sall {
+  right: -190px;
+  bottom: 640px;
+}
 /* <!-- sec-2 끝 --> */
 
 /* <!-- sec-3 시작 --> */
@@ -647,6 +685,15 @@ body::-webkit-scrollbar-track {
 .sec-4_wrap {
   padding-top: 220px;
   gap: 300px;
+}
+
+.sec-4 .sec-4_text {
+  position: relative;
+}
+
+.sec_text-img {
+  left: 670px;
+  bottom: 360px;
 }
 /* <!-- sec-4 끝 --> */
 
